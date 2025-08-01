@@ -21,6 +21,8 @@ A fully containerized development environment with pre-configured AWS tools for 
 | **Node.js**   | 20 LTS    | CDK runtime                   |
 | **boto3**     | Latest    | AWS SDK for Python            |
 
+![](./img/001-setup-1.png)
+
 ## 🚀 Quick Setup
 
 ### Prerequisites
