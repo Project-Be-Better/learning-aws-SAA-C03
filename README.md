@@ -9,270 +9,135 @@
 
 **Start Date:** August 1, 2025  
 **Target Exam Date:** TBD  
-**Current Progress:** 0% ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+**Current Progress:** 5% ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜  
+**Total Study Hours:** 3 hours
 
 ## 🎯 Study Plan Overview
 
-### Exam Domains
+| Domain                                             | Weight | Status         | Progress   |
+| -------------------------------------------------- | ------ | -------------- | ---------- |
+| **Domain 1:** Design Resilient Architectures       | 30%    | 🟡 In Progress | ⬜⬜⬜⬜⬜ |
+| **Domain 2:** Design High-Performing Architectures | 28%    | ⬜ Not Started | ⬜⬜⬜⬜⬜ |
+| **Domain 3:** Design Secure Applications           | 24%    | ⬜ Not Started | ⬜⬜⬜⬜⬜ |
+| **Domain 4:** Design Cost-Optimized Architectures  | 18%    | ⬜ Not Started | ⬜⬜⬜⬜⬜ |
 
-- [ ] **Domain 1: Design Resilient Architectures (30%)**
-- [ ] **Domain 2: Design High-Performing Architectures (28%)**
-- [ ] **Domain 3: Design Secure Applications (24%)**
-- [ ] **Domain 4: Design Cost-Optimized Architectures (18%)**
+## 📚 Daily Learning Log
 
-### Study Resources
+| Date        | Day | Topics Covered                               | Hours | Status      | Notes                                                   | Detailed Log                           |
+| ----------- | --- | -------------------------------------------- | ----- | ----------- | ------------------------------------------------------- | -------------------------------------- |
+| Aug 1, 2025 | 1   | AWS Dev Environment Setup, CLI Configuration | 3h    | ✅ Complete | Set up containerized dev environment with all AWS tools | [📝 Day 1 Details](docs/2025-08-01.md) |
+| Aug 2, 2025 | 2   |                                              |       | ⬜ Planned  |                                                         | [📝 Day 2 Details](docs/2025-08-02.md) |
+| Aug 3, 2025 | 3   |                                              |       | ⬜ Planned  |                                                         | [📝 Day 3 Details](docs/2025-08-03.md) |
+| Aug 4, 2025 | 4   |                                              |       | ⬜ Planned  |                                                         | [📝 Day 4 Details](docs/2025-08-04.md) |
+| Aug 5, 2025 | 5   |                                              |       | ⬜ Planned  |                                                         | [📝 Day 5 Details](docs/2025-08-05.md) |
 
-- [ ] AWS Official Study Guide
-- [ ] AWS Whitepapers
-- [ ] Hands-on Labs
-- [ ] Practice Exams
-- [ ] AWS Documentation
-
-## 📚 Weekly Learning Log
-
-<details>
-<summary><strong>Week 1 (Aug 1-7, 2025)</strong></summary>
-
-### Goals
-
-- [x] Set up development environment
-- [x] Complete AWS fundamentals review
-- [x] Start IAM deep dive
-
-### Activities
-
-- **Day 1 (Aug 1):**
-  - [x] Set up containerized AWS dev environment
-  - [x] Configure AWS CLI and credentials
-- **Day 2 (Aug 2):**
-- **Day 3 (Aug 3):**
-- **Day 4 (Aug 4):**
-- **Day 5 (Aug 5):**
-- **Day 6 (Aug 6):**
-- **Day 7 (Aug 7):**
-
-### Key Learnings
-
--
-
-### Questions/Challenges
-
--
-
-### Next Week Focus
-
--
-
-</details>
-
-<details>
-<summary><strong>Week 2 (Aug 8-14, 2025)</strong></summary>
-
-### Goals
-
--
-
-### Activities
-
-- **Day 8 (Aug 8):**
-- **Day 9 (Aug 9):**
-- **Day 10 (Aug 10):**
-- **Day 11 (Aug 11):**
-- **Day 12 (Aug 12):**
-- **Day 13 (Aug 13):**
-- **Day 14 (Aug 14):**
-
-### Key Learnings
-
--
-
-### Questions/Challenges
-
--
-
-### Next Week Focus
-
--
-
-</details>
-
-<!-- Add more weeks as needed -->
+**Legend:** ✅ Complete | 🟡 In Progress | ⬜ Planned | ❌ Skipped
 
 ## 🛠️ Hands-On Projects
 
-| Project                 | Status         | Completion Date | Key Technologies              | Notes |
-| ----------------------- | -------------- | --------------- | ----------------------------- | ----- |
-| VPC Setup with Multi-AZ | ⬜ Not Started | -               | VPC, Subnets, Route Tables    |       |
-| EC2 Auto Scaling Group  | ⬜ Not Started | -               | EC2, ASG, ELB                 |       |
-| S3 Static Website       | ⬜ Not Started | -               | S3, CloudFront, Route53       |       |
-| RDS Multi-AZ Setup      | ⬜ Not Started | -               | RDS, Security Groups          |       |
-| Lambda Serverless API   | ⬜ Not Started | -               | Lambda, API Gateway, DynamoDB |       |
+| Project                 | Status         | Completion Date | Key Technologies              | Progress   | Detailed Notes |
+| ----------------------- | -------------- | --------------- | ----------------------------- | ---------- | -------------- |
+| VPC Setup with Multi-AZ | ⬜ Not Started | -               | VPC, Subnets, Route Tables    | ⬜⬜⬜⬜⬜ |                |
+| EC2 Auto Scaling Group  | ⬜ Not Started | -               | EC2, ASG, ELB                 | ⬜⬜⬜⬜⬜ |                |
+| S3 Static Website       | ⬜ Not Started | -               | S3, CloudFront, Route53       | ⬜⬜⬜⬜⬜ |                |
+| RDS Multi-AZ Setup      | ⬜ Not Started | -               | RDS, Security Groups          | ⬜⬜⬜⬜⬜ |                |
+| Lambda Serverless API   | ⬜ Not Started | -               | Lambda, API Gateway, DynamoDB | ⬜⬜⬜⬜⬜ |                |
 
 **Legend:** ⬜ Not Started | 🟡 In Progress | ✅ Complete
 
-## 📝 Study Notes
-
-### Domain 1: Design Resilient Architectures
-
-<details>
-<summary>Key Concepts & Services</summary>
-
-#### Multi-Tier Architecture
-
--
-
-#### High Availability
-
--
-
-#### Disaster Recovery
-
--
-
-#### Decoupling
-
--
-
-</details>
-
-### Domain 2: Design High-Performing Architectures
-
-<details>
-<summary>Key Concepts & Services</summary>
-
-#### Scalability
-
--
-
-#### Performance Optimization
-
--
-
-#### Caching
-
--
-
-</details>
-
-### Domain 3: Design Secure Applications
-
-<details>
-<summary>Key Concepts & Services</summary>
-
-#### IAM
-
--
-
-#### Data Protection
-
--
-
-#### Network Security
-
--
-
-</details>
-
-### Domain 4: Design Cost-Optimized Architectures
-
-<details>
-<summary>Key Concepts & Services</summary>
-
-#### Cost Models
-
--
-
-#### Resource Optimization
-
--
-
-#### Monitoring & Governance
-
--
-
-</details>
-
 ## 🧪 Practice Test Results
 
-| Date | Test Provider | Score | Domain 1 | Domain 2 | Domain 3 | Domain 4 | Notes |
-| ---- | ------------- | ----- | -------- | -------- | -------- | -------- | ----- |
-|      |               |       |          |          |          |          |       |
+| Date | Week | Test Provider | Score | Domain 1 | Domain 2 | Domain 3 | Domain 4 | Notes |
+| ---- | ---- | ------------- | ----- | -------- | -------- | -------- | -------- | ----- |
+|      |      |               |       |          |          |          |          |       |
 
-**Passing Score:** 720/1000
+**Target Score:** 720/1000 (72%)
 
-## 🎯 Key Milestones
+## 🎯 Weekly Milestones
 
-- [ ] **Week 2:** Complete AWS fundamentals review
-- [ ] **Week 4:** Finish first practice exam
-- [ ] **Week 6:** Complete all hands-on projects
-- [ ] **Week 8:** Take final practice exams
-- [ ] **Week 10:** Schedule actual exam
-- [ ] **Week 12:** Pass SAA-C03 exam
+| Week        | Dates        | Goals                               | Status         | Completion |
+| ----------- | ------------ | ----------------------------------- | -------------- | ---------- |
+| **Week 1**  | Aug 1-7      | Environment setup, AWS fundamentals | 🟡 In Progress | ⬛⬜⬜⬜⬜ |
+| **Week 2**  | Aug 8-14     | IAM deep dive, VPC basics           | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 3**  | Aug 15-21    | EC2, Storage services               | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 4**  | Aug 22-28    | First practice exam, review gaps    | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 5**  | Aug 29-Sep 4 | Database services, caching          | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 6**  | Sep 5-11     | Complete hands-on projects          | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 7**  | Sep 12-18    | Security deep dive                  | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 8**  | Sep 19-25    | Cost optimization, monitoring       | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 9**  | Sep 26-Oct 2 | Final practice exams                | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
+| **Week 10** | Oct 3-9      | Exam preparation & scheduling       | ⬜ Planned     | ⬜⬜⬜⬜⬜ |
 
-## 📖 Useful Resources
+## 📊 Study Statistics
 
-### AWS Official
+### Time Investment
 
-- [AWS Certified Solutions Architect Associate Exam Guide](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+| Category           | Hours This Week | Total Hours | Target Hours |
+| ------------------ | --------------- | ----------- | ------------ |
+| **Theory Study**   | 1               | 1           | 40           |
+| **Hands-on Labs**  | 2               | 2           | 30           |
+| **Practice Tests** | 0               | 0           | 10           |
+| **Review & Notes** | 0               | 0           | 10           |
+| **Total**          | **3**           | **3**       | **90**       |
 
-### Study Materials
+### Domain Focus Distribution
 
-- AWS Official Study Guide
-- AWS Whitepapers (focus on Well-Architected Framework)
-- AWS Training and Certification portal
+| Domain         | Hours Spent | Target Hours | Progress             |
+| -------------- | ----------- | ------------ | -------------------- |
+| Domain 1 (30%) | 1           | 27           | ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+| Domain 2 (28%) | 0           | 25           | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+| Domain 3 (24%) | 0           | 22           | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+| Domain 4 (18%) | 0           | 16           | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
 
-### Practice Labs
+## 📖 Quick Reference
 
-- AWS Free Tier
-- AWS Hands-on Tutorials
-- Local containerized environment
+### Study Resources
 
-## 🔧 Development Environment
+| Resource Type                  | Status         | Priority | Notes                         |
+| ------------------------------ | -------------- | -------- | ----------------------------- |
+| AWS Official Study Guide       | ⬜ Not Started | High     | Primary study material        |
+| AWS Well-Architected Framework | ⬜ Not Started | High     | Core architectural principles |
+| AWS Whitepapers                | ⬜ Not Started | Medium   | Deep dive topics              |
+| Practice Exams                 | ⬜ Not Started | High     | Test readiness                |
+| AWS Documentation              | 🟡 In Progress | Medium   | Reference material            |
 
-**Setup:** [Dev Container Configuration](/.devcontainer/README.md)
+### Development Environment
 
-**Tools Available:**
+**Setup Guide:** [Dev Container Configuration](/.devcontainer/)
 
-- AWS CLI v2
-- Terraform
-- AWS CDK v2
-- Python 3 + boto3
-- Node.js 20 LTS
+**Available Tools:**
 
-## 📊 Weekly Time Tracking
+- AWS CLI v2, Terraform, AWS CDK v2
+- Python 3 + boto3, Node.js 20 LTS
+- Full VS Code integration with AWS extensions
 
-| Week      | Study Hours | Hands-on Hours | Practice Tests | Total Hours |
-| --------- | ----------- | -------------- | -------------- | ----------- |
-| 1         |             |                |                |             |
-| 2         |             |                |                |             |
-| 3         |             |                |                |             |
-| 4         |             |                |                |             |
-| **Total** | **0**       | **0**          | **0**          | **0**       |
+## 🎉 Achievements Unlocked
 
-## 🎉 Achievements
+| Achievement                 | Date Earned | Notes                                                     |
+| --------------------------- | ----------- | --------------------------------------------------------- |
+| 🚀 Environment Setup Master | Aug 1, 2025 | Successfully configured containerized AWS dev environment |
+|                             |             |                                                           |
+|                             |             |                                                           |
 
-- [ ] Set up complete AWS development environment
-- [ ] Complete first hands-on lab
-- [ ] Score 70%+ on first practice exam
-- [ ] Complete all domain study areas
-- [ ] Score 80%+ on practice exams consistently
-- [ ] Pass SAA-C03 certification exam
-
-## 💭 Reflection Notes
+## 💭 Learning Insights
 
 ### What's Working Well
 
--
+- Containerized development environment provides consistency
+- Table format makes progress tracking much clearer
 
 ### Areas for Improvement
 
--
+- Need to establish consistent daily study routine
+- Should set specific time blocks for different activities
 
 ### Strategy Adjustments
 
-- ***
+- Focus on hands-on practice alongside theory
+- Create detailed daily logs for better reflection
 
-  **Last Updated:** August 1, 2025  
-  **Next Review:** August 8, 2025
+---
+
+**Last Updated:** August 1, 2025  
+**Next Review:** August 8, 2025  
+**Days Until Target Exam:** TBD
