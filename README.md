@@ -1,154 +1,278 @@
-# AWS SAA-C03 Development Environment
+# AWS SAA-C03 Learning Log
 
-> Containerized AWS development environment for Solutions Architect Associate certification study and practice.
+> My journey learning AWS Solutions Architect Associate certification through hands-on practice and study.
 
 [![AWS](https://img.shields.io/badge/AWS-SAA--C03-orange?logo=amazon-aws)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
-[![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)](https://www.docker.com/)
-[![VS Code](https://img.shields.io/badge/VS%20Code-DevContainer-blue?logo=visual-studio-code)](https://code.visualstudio.com/)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)](https://github.com/Project-Be-Better/learning-aws-SAA-C03)
 
-## 🎯 Overview
+## 📅 Learning Timeline
 
-A fully containerized development environment with pre-configured AWS tools for hands-on learning and practice. Zero setup time - everything works out of the box across Windows, macOS, and Linux.
+**Start Date:** August 1, 2025  
+**Target Exam Date:** TBD  
+**Current Progress:** 0% ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 
-## 🛠️ Pre-installed Tools
+## 🎯 Study Plan Overview
 
-| Tool          | Version   | Purpose                       |
-| ------------- | --------- | ----------------------------- |
-| **AWS CLI**   | v2 Latest | AWS service management        |
-| **Terraform** | Latest    | Infrastructure as Code        |
-| **AWS CDK**   | v2 Latest | Cloud application development |
-| **Python 3**  | 3.10+     | Automation with boto3         |
-| **Node.js**   | 20 LTS    | CDK runtime                   |
-| **boto3**     | Latest    | AWS SDK for Python            |
+### Exam Domains
 
-## 🚀 Quick Setup
+- [ ] **Domain 1: Design Resilient Architectures (30%)**
+- [ ] **Domain 2: Design High-Performing Architectures (28%)**
+- [ ] **Domain 3: Design Secure Applications (24%)**
+- [ ] **Domain 4: Design Cost-Optimized Architectures (18%)**
 
-### Prerequisites
+### Study Resources
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows/macOS) or Docker Engine (Linux)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-- AWS Account ([Free Tier](https://aws.amazon.com/free/) recommended)
+- [ ] AWS Official Study Guide
+- [ ] AWS Whitepapers
+- [ ] Hands-on Labs
+- [ ] Practice Exams
+- [ ] AWS Documentation
 
-### Installation
+## 📚 Weekly Learning Log
 
-1. **Clone and open the project**
+<details>
+<summary><strong>Week 1 (Aug 1-7, 2025)</strong></summary>
 
-   ```bash
-   git clone https://github.com/Project-Be-Better/learning-aws-SAA-C03.git
-   cd learning-aws-SAA-C03
-   code .
-   ```
+### Goals
 
-2. **Launch dev container**
+- [x] Set up development environment
+- [x] Complete AWS fundamentals review
+- [x] Start IAM deep dive
 
-   - Click "Reopen in Container" when prompted
-   - Or: `Ctrl+Shift+P` → "Dev Containers: Reopen in Container"
+### Activities
 
-3. **Configure AWS credentials** (choose one option)
+- **Day 1 (Aug 1):**
+  - [x] Set up containerized AWS dev environment
+  - [x] Configure AWS CLI and credentials
+- **Day 2 (Aug 2):**
+- **Day 3 (Aug 3):**
+- **Day 4 (Aug 4):**
+- **Day 5 (Aug 5):**
+- **Day 6 (Aug 6):**
+- **Day 7 (Aug 7):**
 
-   **Option A: AWS CLI (Recommended)**
+### Key Learnings
 
-   ```bash
-   aws configure
-   # Enter: Access Key ID, Secret Key, Region (us-east-1), Output format (json)
-   ```
+-
 
-   **Option B: Environment variables**
+### Questions/Challenges
 
-   ```bash
-   cp .env.example .env
-   # Edit .env with your AWS credentials
-   ```
+-
 
-   **Option C: Use existing credentials**
+### Next Week Focus
 
-   - Container automatically mounts `~/.aws` from host system
+-
 
-4. **Verify setup**
-   ```bash
-   aws sts get-caller-identity  # Verify AWS access
-   terraform version            # Check Terraform
-   cdk --version               # Check AWS CDK
-   python3 -c "import boto3; print('✅ Ready')"
-   ```
+</details>
 
-## 📁 Project Structure
+<details>
+<summary><strong>Week 2 (Aug 8-14, 2025)</strong></summary>
 
-```
-learning-aws-SAA-C03/
-├── .devcontainer/          # Container configuration
-│   ├── Dockerfile         # Ubuntu 22.04 + AWS tools
-│   ├── devcontainer.json  # VS Code settings
-│   └── bootstrap.sh       # Setup script
-├── .aws/                  # AWS config templates
-├── .env.example          # Environment template
-└── .gitignore            # Protects credentials
-```
+### Goals
 
-## � Usage Examples
+-
 
-### AWS CLI Commands
+### Activities
 
-```bash
-aws sts get-caller-identity     # Check AWS identity
-aws ec2 describe-instances      # List EC2 instances
-aws s3 ls                       # List S3 buckets
-```
+- **Day 8 (Aug 8):**
+- **Day 9 (Aug 9):**
+- **Day 10 (Aug 10):**
+- **Day 11 (Aug 11):**
+- **Day 12 (Aug 12):**
+- **Day 13 (Aug 13):**
+- **Day 14 (Aug 14):**
 
-### Terraform Workflow
+### Key Learnings
 
-```bash
-cd terraform/
-terraform init
-terraform plan
-terraform apply
-```
+-
 
-### AWS CDK Workflow
+### Questions/Challenges
 
-```bash
-cdk init app --language=typescript
-cdk deploy
-```
+-
 
-### Python with boto3
+### Next Week Focus
 
-```python
-import boto3
-ec2 = boto3.client('ec2')
-response = ec2.describe_instances()
-```
+-
 
-## 🚨 Troubleshooting
+</details>
 
-### Authentication Issues
+<!-- Add more weeks as needed -->
 
-```bash
-# Check credentials
-aws sts get-caller-identity
+## 🛠️ Hands-On Projects
 
-# Reconfigure if needed
-aws configure
-```
+| Project                 | Status         | Completion Date | Key Technologies              | Notes |
+| ----------------------- | -------------- | --------------- | ----------------------------- | ----- |
+| VPC Setup with Multi-AZ | ⬜ Not Started | -               | VPC, Subnets, Route Tables    |       |
+| EC2 Auto Scaling Group  | ⬜ Not Started | -               | EC2, ASG, ELB                 |       |
+| S3 Static Website       | ⬜ Not Started | -               | S3, CloudFront, Route53       |       |
+| RDS Multi-AZ Setup      | ⬜ Not Started | -               | RDS, Security Groups          |       |
+| Lambda Serverless API   | ⬜ Not Started | -               | Lambda, API Gateway, DynamoDB |       |
 
-### Container Issues
+**Legend:** ⬜ Not Started | 🟡 In Progress | ✅ Complete
 
-- **Rebuild container**: `Ctrl+Shift+P` → "Dev Containers: Rebuild Container"
-- **Check Docker**: Ensure Docker Desktop is running
-- **Re-run setup**: `bash .devcontainer/bootstrap.sh`
+## 📝 Study Notes
 
-## � Security Notes
+### Domain 1: Design Resilient Architectures
 
-- ✅ AWS credentials are excluded from git via `.gitignore`
-- ✅ Use AWS Free Tier resources to minimize costs
-- ✅ Set up billing alerts for cost monitoring
-- ✅ Clean up resources after practice sessions
+<details>
+<summary>Key Concepts & Services</summary>
 
-## License
+#### Multi-Tier Architecture
 
-MIT License - see [LICENSE](LICENSE) file for details.
+-
 
----
+#### High Availability
 
-**Ready to start?** Clone the repo and run `code .` to get started! 🚀
+-
+
+#### Disaster Recovery
+
+-
+
+#### Decoupling
+
+-
+
+</details>
+
+### Domain 2: Design High-Performing Architectures
+
+<details>
+<summary>Key Concepts & Services</summary>
+
+#### Scalability
+
+-
+
+#### Performance Optimization
+
+-
+
+#### Caching
+
+-
+
+</details>
+
+### Domain 3: Design Secure Applications
+
+<details>
+<summary>Key Concepts & Services</summary>
+
+#### IAM
+
+-
+
+#### Data Protection
+
+-
+
+#### Network Security
+
+-
+
+</details>
+
+### Domain 4: Design Cost-Optimized Architectures
+
+<details>
+<summary>Key Concepts & Services</summary>
+
+#### Cost Models
+
+-
+
+#### Resource Optimization
+
+-
+
+#### Monitoring & Governance
+
+-
+
+</details>
+
+## 🧪 Practice Test Results
+
+| Date | Test Provider | Score | Domain 1 | Domain 2 | Domain 3 | Domain 4 | Notes |
+| ---- | ------------- | ----- | -------- | -------- | -------- | -------- | ----- |
+|      |               |       |          |          |          |          |       |
+
+**Passing Score:** 720/1000
+
+## 🎯 Key Milestones
+
+- [ ] **Week 2:** Complete AWS fundamentals review
+- [ ] **Week 4:** Finish first practice exam
+- [ ] **Week 6:** Complete all hands-on projects
+- [ ] **Week 8:** Take final practice exams
+- [ ] **Week 10:** Schedule actual exam
+- [ ] **Week 12:** Pass SAA-C03 exam
+
+## 📖 Useful Resources
+
+### AWS Official
+
+- [AWS Certified Solutions Architect Associate Exam Guide](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+
+### Study Materials
+
+- AWS Official Study Guide
+- AWS Whitepapers (focus on Well-Architected Framework)
+- AWS Training and Certification portal
+
+### Practice Labs
+
+- AWS Free Tier
+- AWS Hands-on Tutorials
+- Local containerized environment
+
+## 🔧 Development Environment
+
+**Setup:** [Dev Container Configuration](/.devcontainer/README.md)
+
+**Tools Available:**
+
+- AWS CLI v2
+- Terraform
+- AWS CDK v2
+- Python 3 + boto3
+- Node.js 20 LTS
+
+## 📊 Weekly Time Tracking
+
+| Week      | Study Hours | Hands-on Hours | Practice Tests | Total Hours |
+| --------- | ----------- | -------------- | -------------- | ----------- |
+| 1         |             |                |                |             |
+| 2         |             |                |                |             |
+| 3         |             |                |                |             |
+| 4         |             |                |                |             |
+| **Total** | **0**       | **0**          | **0**          | **0**       |
+
+## 🎉 Achievements
+
+- [ ] Set up complete AWS development environment
+- [ ] Complete first hands-on lab
+- [ ] Score 70%+ on first practice exam
+- [ ] Complete all domain study areas
+- [ ] Score 80%+ on practice exams consistently
+- [ ] Pass SAA-C03 certification exam
+
+## 💭 Reflection Notes
+
+### What's Working Well
+
+-
+
+### Areas for Improvement
+
+-
+
+### Strategy Adjustments
+
+- ***
+
+  **Last Updated:** August 1, 2025  
+  **Next Review:** August 8, 2025
