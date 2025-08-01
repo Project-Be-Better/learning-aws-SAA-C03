@@ -15,14 +15,14 @@
 
 **Start Date:** August 1, 2025  
 **Target Exam Date:** TBD  
-**Current Progress:** 5% ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜  
+**Current Progress:** 5% 🟩⬜⬜⬜⬜⬜⬜⬜⬜  
 **Total Study Hours:** 3 hours
 
 ## Study Plan Overview
 
 | Domain                                             | Weight | Status      | Progress   |
 | -------------------------------------------------- | ------ | ----------- | ---------- |
-| **Domain 1:** Design Resilient Architectures       | 30%    | In Progress | ⬜⬜⬜⬜⬜ |
+| **Domain 1:** Design Resilient Architectures       | 30%    | In Progress | 🟩⬜⬜⬜⬜ |
 | **Domain 2:** Design High-Performing Architectures | 28%    | Not Started | ⬜⬜⬜⬜⬜ |
 | **Domain 3:** Design Secure Applications           | 24%    | Not Started | ⬜⬜⬜⬜⬜ |
 | **Domain 4:** Design Cost-Optimized Architectures  | 18%    | Not Started | ⬜⬜⬜⬜⬜ |
@@ -63,7 +63,7 @@
 
 | Week        | Dates        | Goals                               | Status      | Completion |
 | ----------- | ------------ | ----------------------------------- | ----------- | ---------- |
-| **Week 1**  | Aug 1-7      | Environment setup, AWS fundamentals | In Progress | ⬛⬜⬜⬜⬜ |
+| **Week 1**  | Aug 1-7      | Environment setup, AWS fundamentals | In Progress | 🟩⬜⬜⬜⬜ |
 | **Week 2**  | Aug 8-14     | IAM deep dive, VPC basics           | Planned     | ⬜⬜⬜⬜⬜ |
 | **Week 3**  | Aug 15-21    | EC2, Storage services               | Planned     | ⬜⬜⬜⬜⬜ |
 | **Week 4**  | Aug 22-28    | First practice exam, review gaps    | Planned     | ⬜⬜⬜⬜⬜ |
@@ -90,7 +90,7 @@
 
 | Domain         | Hours Spent | Target Hours | Progress             |
 | -------------- | ----------- | ------------ | -------------------- |
-| Domain 1 (30%) | 1           | 27           | ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+| Domain 1 (30%) | 1           | 27           | 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
 | Domain 2 (28%) | 0           | 25           | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
 | Domain 3 (24%) | 0           | 22           | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
 | Domain 4 (18%) | 0           | 16           | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
