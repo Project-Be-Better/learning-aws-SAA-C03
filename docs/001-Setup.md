@@ -138,9 +138,14 @@ aws configure
 - **Check Docker**: Ensure Docker Desktop is running
 - **Re-run setup**: `bash .devcontainer/bootstrap.sh`
 
-## � Security Notes
+## Security Notes
 
 - ✅ AWS credentials are excluded from git via `.gitignore`
 - ✅ Use AWS Free Tier resources to minimize costs
 - ✅ Set up billing alerts for cost monitoring
 - ✅ Clean up resources after practice sessions
+
+## Reference
+
+1. https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-envvars.html
+2. https://code.visualstudio.com/docs/devcontainers/create-dev-container#_set-up-a-folder-to-run-in-a-container

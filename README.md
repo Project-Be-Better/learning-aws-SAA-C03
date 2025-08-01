@@ -5,6 +5,12 @@
 [![AWS](https://img.shields.io/badge/AWS-SAA--C03-orange?logo=amazon-aws)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 [![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)](https://github.com/Project-Be-Better/learning-aws-SAA-C03)
 
+## Sources
+
+| Source | Link | Status | Progress |
+| ------ | ---- | ------ | -------- |
+|        |      |        |
+
 ## Learning Timeline
 
 **Start Date:** August 1, 2025  
