@@ -1,5 +1,3 @@
 .env
 .aws/config
 .aws/credentials
-.aws/config.example
-.aws/credentials.example
