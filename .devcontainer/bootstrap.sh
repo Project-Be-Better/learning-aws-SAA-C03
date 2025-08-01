@@ -1,27 +1,20 @@
 #!/bin/bash
 set -e
 
-# Load environment variables from .env if it exists
-if [ -f /workspace/.env ]; then
-  echo "Loading environment variables from .env"
-  export $(grep -v '^#' /workspace/.env | xargs)
-else
-  echo "⚠️ Warning: .env file not found in /workspace. AWS CLI may not be authenticated."
-fi
+echo "🔧 Starting bootstrap setup..."
 
-# Install Python AWS SDK
+echo "🐍 Installing boto3..."
 pip3 install boto3
 
-# Install AWS CDK
+echo "📦 Verifying AWS CDK installation..."
 npm install -g aws-cdk
 
-# Confirm installs
 echo "✅ Installed versions:"
-aws --version || echo "❌ AWS CLI not found or not authenticated"
-tf_version=$(terraform -version | head -n 1)
-echo "Terraform version: $tf_version"
-cdk --version || echo "❌ AWS CDK not installed"
+aws --version
+terraform -version | head -n 1
+cdk --version
 
-# Optional: test authentication
 echo "🔐 Verifying AWS credentials..."
 aws sts get-caller-identity || echo "❌ AWS authentication failed"
+
+echo "✅ Bootstrap complete. Ready to use AWS CLI, boto3, and CDK."
