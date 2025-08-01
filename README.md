@@ -1,228 +1,154 @@
-# AWS Solutions Architect Associate (SAA-C03) Learning Project
+# AWS SAA-C03 Development Environment
 
-This repository contains learning materials, practice exercises, and study resources for the AWS Certified Solutions Architect – Associate (SAA-C03) certification exam using a containerized development environment.
+> Containerized AWS development environment for Solutions Architect Associate certification study and practice.
 
-## Overview
+[![AWS](https://img.shields.io/badge/AWS-SAA--C03-orange?logo=amazon-aws)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+[![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)](https://www.docker.com/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-DevContainer-blue?logo=visual-studio-code)](https://code.visualstudio.com/)
 
-The AWS Solutions Architect Associate certification validates expertise in designing distributed systems on AWS. This project provides a complete development environment with all necessary tools pre-configured for hands-on AWS learning and practice.
+## 🎯 Overview
 
-## Development Environment
+A fully containerized development environment with pre-configured AWS tools for hands-on learning and practice. Zero setup time - everything works out of the box across Windows, macOS, and Linux.
 
-This project uses a **Dev Container** setup with Ubuntu 22.04.5 LTS, providing a consistent development environment across different machines.
+## 🛠️ Pre-installed Tools
 
-### Pre-installed Tools
+| Tool          | Version   | Purpose                       |
+| ------------- | --------- | ----------------------------- |
+| **AWS CLI**   | v2 Latest | AWS service management        |
+| **Terraform** | Latest    | Infrastructure as Code        |
+| **AWS CDK**   | v2 Latest | Cloud application development |
+| **Python 3**  | 3.10+     | Automation with boto3         |
+| **Node.js**   | 20 LTS    | CDK runtime                   |
+| **boto3**     | Latest    | AWS SDK for Python            |
 
-- **AWS CLI** - Command line interface for AWS services
-- **Terraform** - Infrastructure as Code tool
-- **AWS CDK** - Cloud Development Kit for TypeScript/Python
-- **Python 3** with **boto3** - AWS SDK for Python
-- **Node.js 20 LTS** - Required for AWS CDK v2+
-- **Git, curl, jq, vim** - Essential development tools
-
-### VS Code Extensions
-
-The dev container automatically installs:
-
-- AWS Toolkit for Visual Studio Code
-- HashiCorp Terraform
-- Python
-- Prettier Code Formatter
-- Docker
-
-## Project Structure
-
-```
-learning-SAA-C03/
-├── .devcontainer/          # Dev container configuration
-│   ├── devcontainer.json   # Container settings and extensions
-│   ├── Dockerfile         # Container image definition
-│   └── bootstrap.sh       # Post-create setup script
-├── .aws/                  # AWS configuration files
-│   ├── config.example     # AWS CLI config template
-│   └── credentials.example # AWS credentials template
-├── .env.example          # Environment variables template
-├── .gitignore           # Git ignore rules
-├── img/                 # Documentation images
-└── README.md           # This file
-```
-
-## Getting Started
+## 🚀 Quick Setup
 
 ### Prerequisites
 
-- [Docker](https://www.docker.com/get-started) installed on your machine
-- [Visual Studio Code](https://code.visualstudio.com/) with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-- AWS Account (Free Tier recommended for learning)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows/macOS) or Docker Engine (Linux)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- AWS Account ([Free Tier](https://aws.amazon.com/free/) recommended)
 
-### Setup Instructions
+### Installation
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone <your-repo-url>
-   cd learning-SAA-C03
-   ```
-
-2. **Open in VS Code:**
+1. **Clone and open the project**
 
    ```bash
+   git clone https://github.com/Project-Be-Better/learning-aws-SAA-C03.git
+   cd learning-aws-SAA-C03
    code .
    ```
 
-3. **Reopen in Container:**
+2. **Launch dev container**
 
-   - VS Code will prompt to "Reopen in Container"
-   - Or use Command Palette (`Ctrl+Shift+P`) → "Dev Containers: Reopen in Container"
+   - Click "Reopen in Container" when prompted
+   - Or: `Ctrl+Shift+P` → "Dev Containers: Reopen in Container"
 
-4. **Configure AWS Credentials:**
+3. **Configure AWS credentials** (choose one option)
 
-   **Option A: Using AWS CLI in the container**
+   **Option A: AWS CLI (Recommended)**
 
    ```bash
    aws configure
+   # Enter: Access Key ID, Secret Key, Region (us-east-1), Output format (json)
    ```
 
-   **Option B: Copy from host (if you have AWS CLI configured locally)**
-
-   - The container automatically mounts your local `~/.aws` directory
-   - Your existing AWS credentials will be available
-
-   **Option C: Environment variables**
+   **Option B: Environment variables**
 
    ```bash
    cp .env.example .env
    # Edit .env with your AWS credentials
    ```
 
-5. **Verify Setup:**
+   **Option C: Use existing credentials**
+
+   - Container automatically mounts `~/.aws` from host system
+
+4. **Verify setup**
    ```bash
-   aws sts get-caller-identity
-   terraform version
-   cdk --version
+   aws sts get-caller-identity  # Verify AWS access
+   terraform version            # Check Terraform
+   cdk --version               # Check AWS CDK
+   python3 -c "import boto3; print('✅ Ready')"
    ```
 
-## Key AWS Topics Covered
+## 📁 Project Structure
 
-- **Design Resilient Architectures** (30% of exam)
+```
+learning-aws-SAA-C03/
+├── .devcontainer/          # Container configuration
+│   ├── Dockerfile         # Ubuntu 22.04 + AWS tools
+│   ├── devcontainer.json  # VS Code settings
+│   └── bootstrap.sh       # Setup script
+├── .aws/                  # AWS config templates
+├── .env.example          # Environment template
+└── .gitignore            # Protects credentials
+```
 
-  - Multi-tier architecture design
-  - High availability and fault tolerance
-  - Disaster recovery strategies
+## � Usage Examples
 
-- **Design High-Performing Architectures** (28% of exam)
-
-  - Scalable and elastic solutions
-  - Performance optimization
-  - Caching strategies
-
-- **Design Secure Applications and Architectures** (24% of exam)
-
-  - Identity and access management
-  - Data protection and encryption
-  - Security best practices
-
-- **Design Cost-Optimized Architectures** (18% of exam)
-  - Cost-effective resource selection
-  - Pricing models and optimization
-  - Resource lifecycle management
-
-## Core AWS Services Focus
-
-### Compute
-
-- Amazon EC2, Auto Scaling
-- AWS Lambda
-- Amazon ECS/EKS
-
-### Storage
-
-- Amazon S3
-- Amazon EBS, EFS
-- AWS Storage Gateway
-
-### Database
-
-- Amazon RDS
-- Amazon DynamoDB
-- Amazon ElastiCache
-
-### Networking
-
-- Amazon VPC
-- Amazon CloudFront
-- Amazon Route 53
-- Elastic Load Balancing
-
-### Security
-
-- AWS IAM
-- AWS KMS
-- AWS CloudTrail
-- AWS Config
-
-### Monitoring
-
-- Amazon CloudWatch
-- AWS X-Ray
-
-## Development Workflow
-
-1. **Infrastructure as Code:**
-
-   - Use Terraform for infrastructure provisioning
-   - Use AWS CDK for application infrastructure
-
-2. **Python Scripts:**
-
-   - boto3 for AWS automation scripts
-   - Practice exercises using Python SDK
-
-3. **AWS CLI:**
-   - Command-line operations and scripting
-   - Service exploration and testing
-
-## Port Forwarding
-
-The dev container forwards ports 3000 and 8080 for local web applications and services.
-
-## Security Notes
-
-- AWS credentials are never committed to the repository
-- Use the [.gitignore](.gitignore) file to prevent credential exposure
-- Follow AWS security best practices for IAM roles and policies
-
-## Container Features
-
-- **Automatic Tool Installation:** All AWS tools are pre-installed via [bootstrap.sh](.devcontainer/bootstrap.sh)
-- **Credential Mounting:** Your local AWS credentials are mounted into the container
-- **VS Code Integration:** Full IntelliSense and debugging support for all languages
-
-## Troubleshooting
-
-### AWS Authentication Issues
+### AWS CLI Commands
 
 ```bash
-# Check current identity
+aws sts get-caller-identity     # Check AWS identity
+aws ec2 describe-instances      # List EC2 instances
+aws s3 ls                       # List S3 buckets
+```
+
+### Terraform Workflow
+
+```bash
+cd terraform/
+terraform init
+terraform plan
+terraform apply
+```
+
+### AWS CDK Workflow
+
+```bash
+cdk init app --language=typescript
+cdk deploy
+```
+
+### Python with boto3
+
+```python
+import boto3
+ec2 = boto3.client('ec2')
+response = ec2.describe_instances()
+```
+
+## 🚨 Troubleshooting
+
+### Authentication Issues
+
+```bash
+# Check credentials
 aws sts get-caller-identity
 
 # Reconfigure if needed
 aws configure
 ```
 
-### Container Rebuild
+### Container Issues
 
-If you need to rebuild the container:
+- **Rebuild container**: `Ctrl+Shift+P` → "Dev Containers: Rebuild Container"
+- **Check Docker**: Ensure Docker Desktop is running
+- **Re-run setup**: `bash .devcontainer/bootstrap.sh`
 
-1. Command Palette → "Dev Containers: Rebuild Container"
+## � Security Notes
 
-## Contributing
-
-Feel free to contribute by adding exercises, improving documentation, or sharing study resources through pull requests.
+- ✅ AWS credentials are excluded from git via `.gitignore`
+- ✅ Use AWS Free Tier resources to minimize costs
+- ✅ Set up billing alerts for cost monitoring
+- ✅ Clean up resources after practice sessions
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License - see [LICENSE](LICENSE) file for details.
 
-## Disclaimer
+---
 
-This repository is for educational purposes only. Always follow AWS best practices and be mindful of costs when working with AWS services. Use AWS Free Tier resources when possible to minimize costs during learning.
+**Ready to start?** Clone the repo and run `code .` to get started! 🚀

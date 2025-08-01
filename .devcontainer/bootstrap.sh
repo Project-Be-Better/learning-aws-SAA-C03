@@ -7,11 +7,11 @@ echo "🐍 Installing boto3..."
 pip3 install boto3
 
 echo "📦 Verifying AWS CDK installation..."
-npm install -g aws-cdk
+npm install -g aws-cdk@2
 
 echo "✅ Installed versions:"
 aws --version
-terraform -version | head -n 1
+terraform version | head -n 1
 cdk --version
 
 echo "🔐 Verifying AWS credentials..."
